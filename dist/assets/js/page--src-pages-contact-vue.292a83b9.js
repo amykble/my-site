@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{170:function(t,n,a){"use strict";a.r(n);var e={metaInfo:{title:"Contact Us"},name:"Contact"},o=a(18),s=Object(o.a)(e,(function(){var t=this.$createElement;return(this._self._c||t)("Layout",{staticClass:"bg-gray-200 font-body"})}),[],!1,null,"7bb2d0d0",null);n.default=s.exports}}]);

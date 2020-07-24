@@ -1,10 +1,12 @@
 # amykble.dev 🚀
 
-<!-- <p align="center">
-  <img width="500" src="src/assets/images/amykble/" alt="Project Logo">
-</p> -->
+<p align="center">
+  <img width="500" src="src/assets/images/amykble/black-1080.svg" alt="Project Logo">
+</p>
 
 ## Information about The Site
+
+This repo hosts all of the files for my personal site. It's public so if you're interested in seeing how I built it feel free to take a look! I'm currently using Gridsome to build the site, with Prismic to add content to the blog and portfolio pages. Enjoy 💚
 
 See the [changelog](CHANGELOG.md) to see all updates to this project.
 

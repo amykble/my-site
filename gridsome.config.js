@@ -5,7 +5,7 @@ module.exports = {
     "Hey! You've stumbled upon my personal blog and portolio. If you read a few of my blog posts, you might learn something about web developement, or if that's not your cup of tea, you can find all of my projects here too. enjoy ✨",
   icon: {
     favicon: {
-      src: './src/assets/images/amykble/favicon.ico',
+      src: './src/assets/images/amykble/black-1080.svg',
       sizes: [16, 32, 96],
     },
   },

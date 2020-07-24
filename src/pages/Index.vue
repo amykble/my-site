@@ -2,6 +2,7 @@
   <Layout class="bg-gray-900 font-body">
     <main>
       <section class="flex justify-center items-center max-w-screen-lg h-screen mx-auto">
+        <g-image src="../assets/images/amykble/white-1080.svg" class="h-24 w-auto" />
         <h1 class="text-4xl text-teal-200 font-semibold mx-6">site coming soon 🚀</h1>
       </section>
       <!-- <section>
