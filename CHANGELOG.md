@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 - Adding a search bar (search by word etc) -->
 
+### [0.1.2] | 2020-07-25
+
+- Reordered title template
+
+---
+
 ### [0.1.1] | 2020-07-24
 
 - Added first logos

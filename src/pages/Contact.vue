@@ -15,7 +15,7 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Contact Us',
+		title: 'Contact Me | amykble',
 	},
 	name: 'Contact',
 }

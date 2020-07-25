@@ -29,7 +29,7 @@
 <script>
 export default {
 	metaInfo: {
-		title: '404',
+		title: '404! Oopsie',
 	},
 }
 </script>

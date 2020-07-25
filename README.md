@@ -1,7 +1,7 @@
 # amykble.dev 🚀
 
 <p align="center">
-  <img width="500" src="src/assets/images/amykble/black-1080.svg" alt="Project Logo">
+  <img width="500" src="src/assets/images/amykble/dark-1080.svg" alt="Project Logo">
 </p>
 
 ## Information about The Site

@@ -32,7 +32,7 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Blog',
+		title: 'Blog | amykble',
 	},
 	name: 'Blog',
 }

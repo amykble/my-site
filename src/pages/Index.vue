@@ -99,7 +99,7 @@
 <script>
 export default {
 	metaInfo: {
-		title: 'Home',
+		title: 'amykble | front-end web developer',
 	},
 	name: 'Home',
 }
