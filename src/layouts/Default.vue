@@ -26,3 +26,14 @@ export default {
 	},
 }
 </script>
+
+<style>
+@font-face {
+	font-family: 'MadeOuterSansAltRegular';
+	src: url('../assets/fonts/outer-sans-alt-regular/made-outer-sans-alt-regular.ttf');
+	src: url('../assets/fonts/outer-sans-alt-regular/made-outer-sans-alt-regular.woff')
+			format('woff'),
+		url('../assets/fonts/outer-sans-alt-regular/made-outer-sans-alt-regular.woff2')
+			format('woff2');
+}
+</style>

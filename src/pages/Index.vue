@@ -6,7 +6,7 @@
       >
         <g-image src="../assets/images/amykble/white-1080.svg" class="h-24 w-auto" />
         <h1
-          class="mx-6 title-font text-3xl mt-6 md:text-4xl md:mt-0 text-teal-200"
+          class="font-title tracking-wider mx-6 text-2xl mt-6 md:text-4xl md:mt-0 text-teal-200"
         >site coming soon 🚀</h1>
       </section>
       <!-- <section>

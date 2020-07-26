@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+### [0.1.3] | 2020-07-26
+
+- Added local fonts
+
+---
+
 ### [0.1.2] | 2020-07-25
 
 - Reordered title template
