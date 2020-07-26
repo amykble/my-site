@@ -20,7 +20,7 @@ module.exports = {
       },
       fontFamily: {
         body: ['Inter', 'sans-serif'],
-        title: ['Josefin Sans', 'sans-serif'],
+        title: ['MadeOuterSansAltRegular', 'sans-serif'],
         mono: ['Fira Code', 'monospace'],
       },
       boxShadow: {

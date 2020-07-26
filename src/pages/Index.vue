@@ -6,50 +6,13 @@
       >
         <g-image src="../assets/images/amykble/white-1080.svg" class="h-24 w-auto" />
         <h1
-          class="text-3xl mt-6 md:text-4xl md:mt-0 text-teal-200 font-semibold mx-6"
+          class="mx-6 title-font text-3xl mt-6 md:text-4xl md:mt-0 text-teal-200"
         >site coming soon 🚀</h1>
       </section>
       <!-- <section>
         <div class="max-w-screen-lg mx-auto">
           <header class="mx-6 py-10">
             <h1 class="font-title font-bold text-4xl">Home Page</h1>
-            <h2
-              class="font-bold text-xl text-gray-700 dark:text-gray-300"
-            >This is a Gridsome blog starter using tailwind w/ their new typography plugin, source-filesystem, transformer-remark and remark-shiki</h2>
-            <div class="pt-2 flex flex-col md:flex-row md:justify-between">
-              <p class="mr-2 font-bold text-gray-500">Links:</p>
-              <a
-                href="https://twitter.com/amykble_dev"
-                rel="noopener"
-                target="_blank"
-                class="md:mx-2 text-green-400 hover:text-pink-500 focus:text-pink-500 font-bold"
-              >My Twitter</a>
-              <a
-                href="https://github.com/amykble/gridsome-blog-starter"
-                rel="noopener"
-                target="_blank"
-                class="md:mx-2 text-green-400 hover:text-pink-500 focus:text-pink-500 font-bold"
-              >Github Repo</a>
-
-              <a
-                href="https://gridsome.org"
-                rel="noopener"
-                target="_blank"
-                class="md:mx-2 text-green-400 hover:text-pink-500 focus:text-pink-500 font-bold"
-              >Gridsome</a>
-              <a
-                href="https://tailwindcss.com"
-                rel="noopener"
-                target="_blank"
-                class="md:mx-2 text-green-400 hover:text-pink-500 focus:text-pink-500 font-bold"
-              >Tailwind</a>
-              <a
-                href="https://github.com/tailwindcss/typography"
-                rel="noopener"
-                target="_blank"
-                class="md:ml-2 text-green-400 hover:text-pink-500 focus:text-pink-500 font-bold"
-              >Tailwind Typography</a>
-            </div>
           </header>
           <article v-for="edge in $page.blog.edges" :key="edge.node.id" class="mx-6 py-10">
             <h2 class="font-title font-bold text-xl">Most Recent Post</h2>
