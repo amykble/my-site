@@ -23,8 +23,8 @@ a:focus {
 }
 
 ::selection {
-  background: #68d391;
+  @apply bg-blue-200;
 }
 ::-moz-selection {
-  background: #68d391;
+  @apply bg-blue-200;
 }

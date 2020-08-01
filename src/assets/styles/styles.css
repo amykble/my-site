@@ -1,0 +1,65 @@
+.before-class::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 90%;
+  height: 20%;
+  top: 60%;
+  left: 5%;
+  z-index: -1;
+  @apply bg-gray-800 transition-all duration-200 ease-in-out;
+}
+
+.before-class:hover::before,
+.before-class:focus::before {
+  height: 100%;
+  top: 0;
+  @apply bg-gray-700;
+}
+
+.bg-hover::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  @apply bg-orange-450 transition-all duration-200 ease-in-out;
+}
+
+.bg-hover:hover::before,
+.bg-hover:focus::before {
+  top: 10px;
+  left: 10px;
+}
+
+.before-class-header::before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 105%;
+  height: 40%;
+  top: 60%;
+  left: -2.5%;
+  z-index: -1;
+  @apply bg-gray-800;
+}
+
+.gradient {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient:hover,
+.gradient:focus {
+  background: -webkit-linear-gradient(rgb(99, 179, 237), rgba(0, 0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+}

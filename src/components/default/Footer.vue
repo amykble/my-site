@@ -1,20 +1,32 @@
 <template>
-  <footer class="w-full bg-gray-900 dark:border-t dark:border-gray-800">
-    <!-- <section class="max-w-screen-lg mx-auto px-6 py-10 text-gray-500 font-body">
-      <nav class="text-pink-500">
+  <footer class="w-full bg-gray-900">
+    <section class="max-w-screen-lg mx-auto px-6 py-10 text-gray-500 font-body">
+      <nav class="text-orange-450">
         <div class="max-w-screen-lg mx-auto">
           <ul class="flex items-center">
             <li class="mr-6">
-              <g-link class="hover:text-green-400 focus:text-green-400" to="/">Home</g-link>
+              <g-link
+                class="transition duration-200 ease-in-out hover:text-blue-400 focus:text-blue-400"
+                to="/"
+              >Home</g-link>
             </li>
             <li class="mr-6">
-              <g-link class="hover:text-green-400 focus:text-green-400" to="/about">About</g-link>
+              <g-link
+                class="transition duration-200 ease-in-out hover:text-blue-400 focus:text-blue-400"
+                to="/about"
+              >About</g-link>
             </li>
             <li class="mr-6 p-1">
-              <g-link class="hover:text-green-400 focus:text-green-400" to="/blog">Blog</g-link>
+              <g-link
+                class="transition duration-200 ease-in-out hover:text-blue-400 focus:text-blue-400"
+                to="/projects"
+              >Projects</g-link>
             </li>
             <li class="mr-6">
-              <g-link class="hover:text-green-400 focus:text-green-400" to="/contact">Contact</g-link>
+              <g-link
+                class="transition duration-200 ease-in-out hover:text-blue-400 focus:text-blue-400"
+                to="/blog"
+              >Blog</g-link>
             </li>
           </ul>
         </div>
@@ -36,13 +48,13 @@
           />
         </a>by
         <a
-          class="text-pink-500 hover:text-green-400 focus:text-green-400 focus:outline-none"
+          class="transition duration-200 ease-in-out text-blue-400 hover:text-orange-450 focus:text-orange-450"
           href="https://github.com/amykble"
           target="_blank"
           rel="noopener"
         >Amy Keable</a>
       </p>
-    </section>-->
+    </section>
   </footer>
 </template>
 

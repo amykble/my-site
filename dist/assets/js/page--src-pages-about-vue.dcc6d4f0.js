@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{odGf:function(t,e,n){"use strict";n.r(e);var a={metaInfo:{title:"About Me | amykble"},name:"About"},o=n("KHd+"),s=Object(o.a)(a,(function(){var t=this.$createElement;return(this._self._c||t)("Layout",{staticClass:"bg-gray-200 font-body"})}),[],!1,null,"11186cf0",null);e.default=s.exports}}]);

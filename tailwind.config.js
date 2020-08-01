@@ -2,7 +2,11 @@ module.exports = {
   purge: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx'],
   theme: {
     extend: {
-      colors: { 'gray-850': '#242C3A', 'gray-950': '#0D1016' },
+      colors: {
+        'gray-850': '#242C3A',
+        'gray-950': '#0D1016',
+        'orange-450': '#F29B46',
+      },
       spacing: {
         '05': '0.125rem',
         '14': '3.5rem',
@@ -19,7 +23,7 @@ module.exports = {
         'half-view': '50vh',
       },
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
+        body: ['Montserrat', 'sans-serif'],
         title: ['MadeOuterSansAltRegular', 'sans-serif'],
         mono: ['Fira Code', 'monospace'],
       },

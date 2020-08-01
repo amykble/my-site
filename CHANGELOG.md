@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+- Add minSuffix to recent posts
+
+### [0.2.0] | 2020-07-31
+
+- Structured home page and blog posts page
+- Added navigation
+- Added footer
+
+---
+
 ### [0.1.3] | 2020-07-26
 
 - Added local fonts

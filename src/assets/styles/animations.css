@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-ltr {
+  animation: fadeIn 500ms ease-out 100ms forwards;
+}
