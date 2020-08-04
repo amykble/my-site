@@ -1,6 +1,7 @@
 <template>
   <Layout class="bg-img bg-gray-900 font-body">
     <main>
+      <Hero />
       <RecentPosts />
     </main>
   </Layout>
@@ -24,6 +25,7 @@ query {
 </page-query>
 
 <script>
+import Hero from '../components/modules/Hero'
 import RecentPosts from '../components/modules/RecentPosts'
 
 export default {
@@ -32,6 +34,7 @@ export default {
 	},
 	name: 'Home',
 	components: {
+		Hero,
 		RecentPosts,
 	},
 }

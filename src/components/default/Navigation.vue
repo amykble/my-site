@@ -1,6 +1,9 @@
 <template>
   <header>
-    <section class="w-full fixed z-50 bg-gray-900 bg-blur bg-opacity-100 md:bg-opacity-90">
+    <section
+      :class="isOpen ? 'bg-opacity-100' : 'bg-opacity-90'"
+      class="w-full fixed z-50 bg-gray-900 bg-blur md:bg-opacity-90 transition duration-200 ease-in-out"
+    >
       <div
         class="max-w-screen-lg mx-auto px-6 md:flex mditems-center md:justify-between font-title"
       >
@@ -33,7 +36,7 @@
         </div>
         <nav
           :class="isOpen ? 'flex' : 'hidden'"
-          class="md:flex flex-col md:flex-row items-center pb-6 md:pb-0 text-orange-450 text-2xl md:text-base"
+          class="md:flex flex-col md:flex-row items-center pb-10 md:pb-0 text-orange-450 text-2xl md:text-base"
         >
           <g-link
             class="md:mr-12 relative before-class hover:text-purple-500 focus:text-purple-500 px-4 py-2 transition duration-200 ease-in-out"

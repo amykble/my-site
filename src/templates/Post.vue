@@ -2,7 +2,7 @@
 <template>
   <Layout class="bg-gray-200 font-body">
     <main>
-      <section class="sm:pb-6">
+      <section>
         <div class="max-w-screen-lg mx-auto">
           <header class="mx-6 py-10">
             <h1 class="font-title font-bold text-3xl md:text-4xl uppercase">{{ $page.post.title }}</h1>
@@ -23,12 +23,12 @@
               >More Posts</g-link>
             </div>
           </header>
-          <div class="remark sm:mx-6 bg-gray-100 shadow-lg">
-            <article
-              v-html="$page.post.content"
-              class="prose md:prose-xl mx-auto px-6 sm:px-3 py-10"
-            ></article>
-          </div>
+        </div>
+        <div class="remark bg-gray-100 shadow-lg">
+          <article
+            v-html="$page.post.content"
+            class="prose max-w-screen-lg mx-auto md:prose-xl px-6 py-10"
+          ></article>
         </div>
       </section>
     </main>
@@ -78,9 +78,7 @@ export default {
 
 <style>
 .remark h1,
-.remark h2,
-.remark h3,
-.remark h4 {
+.remark h2 {
 	@apply bg-orange-200;
 }
 
