@@ -1,11 +1,11 @@
 <template>
-  <nav>
-    <section
-      class="bg-blur bg-gray-900 md:bg-opacity-90 font-title fixed z-50 w-full text-orange-450"
-    >
-      <div class="max-w-screen-lg mt-10 mb-8 mx-auto">
-        <ul class="block md:flex md:items-center md:justify-start text-lg">
-          <li class="flex ml-6 mr-auto">
+  <header>
+    <section class="w-full fixed z-50 bg-gray-900 bg-blur bg-opacity-100 md:bg-opacity-90">
+      <div
+        class="max-w-screen-lg mx-auto px-6 md:flex mditems-center md:justify-between font-title"
+      >
+        <div class="h-24 flex items-center justify-between">
+          <div>
             <g-link to="/" class="gradient flex items-center">
               <g-image
                 src="../../assets/images/amykble/white-line-1080.svg"
@@ -13,50 +13,94 @@
               />
               <h1 class="text-gray-100 transition duration-200 ease-in-out">amykble</h1>
             </g-link>
-            <button class="hamburger ml-auto mr-4 p-2 md:hidden hover:cursor-pointer">
-              <span class="slice block h-1 w-8 bg-gray-200 mb-2"></span>
-              <span class="slice block h-1 bg-gray-200 w-8"></span>
-            </button>
-          </li>
-          <div
-            class="h-screen md:h-auto flex items-center flex-col md:flex-row text-3xl md:text-base"
-          >
-            <li class="mt-12 md:mt-0 md:mr-12">
-              <g-link
-                class="relative before-class hover:text-purple-500 focus:text-purple-500 px-4 py-2 transition duration-200 ease-in-out"
-                to="/about"
-              >about</g-link>
-            </li>
-            <li class="mt-12 md:mt-0 md:mr-12">
-              <g-link
-                class="relative before-class hover:text-green-400 focus:text-green-400 px-4 py-2 transition duration-200 ease-in-out"
-                to="/projects"
-              >projects</g-link>
-            </li>
-            <li class="mt-12 md:mt-0 md:mr-6">
-              <g-link
-                class="relative before-class hover:text-blue-400 focus:text-blue-400 px-4 py-2 transition duration-200 ease-in-out"
-                to="/blog"
-              >blog</g-link>
-            </li>
           </div>
-        </ul>
+          <div class="md:hidden">
+            <button
+              @click="isOpen = !isOpen"
+              type="button"
+              class="hamburger ml-auto py-2 hover:cursor-pointer"
+            >
+              <span
+                :class="isOpen ? 'cross-down' : 'undo-top'"
+                class="slice block h-1 w-8 bg-gray-200 mb-2 transition duration-200 ease-in-out"
+              ></span>
+              <span
+                :class="isOpen ? 'cross-up' : 'undo-bottom'"
+                class="slice block h-1 bg-gray-200 w-8 transition duration-200 ease-in-out"
+              ></span>
+            </button>
+          </div>
+        </div>
+        <nav
+          :class="isOpen ? 'flex' : 'hidden'"
+          class="md:flex flex-col md:flex-row items-center pb-6 md:pb-0 text-orange-450 text-2xl md:text-base"
+        >
+          <g-link
+            class="md:mr-12 relative before-class hover:text-purple-500 focus:text-purple-500 px-4 py-2 transition duration-200 ease-in-out"
+            to="/about"
+          >about</g-link>
+          <g-link
+            class="mt-6 md:mt-0 md:mr-12 relative before-class hover:text-green-400 focus:text-green-400 px-4 py-2 transition duration-200 ease-in-out"
+            to="/projects"
+          >projects</g-link>
+          <g-link
+            class="mt-6 md:mt-0 relative before-class hover:text-blue-400 focus:text-blue-400 px-4 py-2 transition duration-200 ease-in-out"
+            to="/blog"
+          >blog</g-link>
+        </nav>
       </div>
     </section>
-    <section class="h-32 bg-gray-900"></section>
-  </nav>
+    <section class="h-24 bg-gray-900"></section>
+  </header>
 </template>
 
 
 <script>
 export default {
 	name: 'Navigation',
+	data() {
+		return {
+			isOpen: false,
+		}
+	},
 }
 </script>
 
 
 <style scoped>
-.hamburger:hover .slice {
-	@apply bg-gray-500;
+.hamburger:focus .slice {
+	@apply border border-orange-450;
 }
+
+.cross-down {
+	transform: translateY(-4px) translateX(9px) rotate(45deg);
+	transform-origin: left;
+}
+
+.undo-top {
+	transform: rotate(0deg);
+	transform-origin: left;
+}
+
+.cross-up {
+	@apply bg-orange-450;
+	transform: translateY(-16px) rotate(-45deg);
+	transform-origin: right;
+}
+
+.undo-bottom {
+	transform: rotate(0deg);
+	transform-origin: right;
+}
+
+/* .fade-in-links {
+	opacity: 1;
+	transition: all;
+	transition-duration: 200ms;
+	transition-delay: 300ms;
+}
+
+.fade-out-links {
+	opacity: 0;
+} */
 </style>
