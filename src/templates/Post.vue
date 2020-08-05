@@ -24,7 +24,7 @@
             </div>
           </header>
         </div>
-        <div class="remark bg-gray-100 shadow-lg">
+        <div class="remark min-h-screen bg-gray-100 shadow-lg">
           <article
             v-html="$page.post.content"
             class="prose max-w-screen-lg mx-auto md:prose-xl px-6 py-10"

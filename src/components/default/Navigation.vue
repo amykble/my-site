@@ -72,7 +72,7 @@ export default {
 
 <style scoped>
 .hamburger:focus .slice {
-	@apply border border-orange-450;
+	@apply bg-orange-450;
 }
 
 .cross-down {
@@ -86,7 +86,6 @@ export default {
 }
 
 .cross-up {
-	@apply bg-orange-450;
 	transform: translateY(-16px) rotate(-45deg);
 	transform-origin: right;
 }

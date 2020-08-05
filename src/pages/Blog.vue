@@ -1,33 +1,53 @@
 <template>
-  <Layout class="bg-gray-200 font-body">
-    <!-- <main>
+  <Layout class="bg-gray-900 font-body">
+    <main>
       <section>
-        <div class="max-w-screen-lg mx-auto">
-          <header class="mx-6 py-10">
-            <h1 class="font-title font-bold text-4xl">Blog Posts</h1>
-            <h2
-              class="font-bold text-xl text-gray-700"
-            >The conent on this page is pulled in from the markdown files in the content folder with graphql. Those markdown files can be generated with a headless CMS.</h2>
+        <div class="min-h-screen max-w-screen-lg mx-auto">
+          <header class="fade-in-ltr opacity-0 px-2">
+            <h1
+              class="inline relative z-10 before-class-header mx-6 font-title font-bold text-3xl sm:text-4xl text-blue-400 uppercase"
+            >Blog Posts</h1>
           </header>
-          <article v-for="edge in $page.blog.edges" :key="edge.node.id" class="mx-6 mt-10">
-            <h3 class="font-title font-bold text-xl">
-              <span class="underline">Title:</span>
-              {{ edge.node.title }}
-            </h3>
-            <h4>Posted: {{ edge.node.date }}</h4>
-            <p>Snippet: {{ edge.node.snippet }}</p>
-            <div class="mt-4 mb-10">
-              <g-link
-                :to="edge.node.path"
-                class="text-lg p-1 bg-gray-200 border border-solid border-green-400 rounded text-green-400 hover:text-pink-400 focus:text-pink-400"
-              >Read more</g-link>
-            </div>
-          </article>
+          <section class="mx-6 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
+            <article v-for="edge in $page.blog.edges" :key="edge.node.id" class="z-10 relative">
+              <g-link :to="edge.node.path" class="group bg-hover">
+                <div
+                  class="p-6 h-full flex flex-col justify-between bg-white hover:bg-blue-100 transition-all duration-200 ease-in-out"
+                >
+                  <div>
+                    <span :class="edge.node.tagCol" class="px-2 py-1 text-sm">{{ edge.node.tag }}</span>
+                    <h2 class="mt-2 text-2xl text-blue-600">{{ edge.node.title }}</h2>
+                  </div>
+                  <div>
+                    <h3 class="mt-4 italic text-gray-800">{{ edge.node.date }}</h3>
+                    <h4 class="mt-2 text-sm text-gray-600">{{ edge.node.timeToRead }} min read</h4>
+                  </div>
+                </div>
+              </g-link>
+            </article>
+          </section>
         </div>
       </section>
-    </main>-->
+    </main>
   </Layout>
 </template>
+
+<page-query>
+query Post {
+  blog: allPost(sortBy: "date") {
+    edges {
+      node {
+        tag
+        tagCol
+        title
+        date (format: "DD MMMM, YYYY")
+        timeToRead
+        path
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 export default {
