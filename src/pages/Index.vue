@@ -3,6 +3,7 @@
     <main>
       <Hero />
       <RecentPosts />
+      <RecentProjects />
     </main>
   </Layout>
 </template>
@@ -21,12 +22,26 @@ query {
       }
     }
   }
+  portfolio: allProject(sortBy: "date", limit: 3) {
+    edges {
+      node {
+        title
+        type
+        github
+        website
+        date (format: "MMMM, YYYY")
+        img
+				path 
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
 import Hero from '../components/modules/Hero'
 import RecentPosts from '../components/modules/RecentPosts'
+import RecentProjects from '../components/modules/RecentProjects'
 
 export default {
 	metaInfo: {
@@ -36,6 +51,7 @@ export default {
 	components: {
 		Hero,
 		RecentPosts,
+		RecentProjects,
 	},
 }
 </script>

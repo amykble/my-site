@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-900">
     <div class="max-w-screen-lg mx-auto">
-      <header class="fade-in-ltr opacity-0 px-2">
+      <header class="fade-in-ltr opacity-0 px-2 mt-16">
         <h1
           class="inline relative z-10 before-class-header mx-6 font-title font-bold text-3xl sm:text-4xl text-blue-400"
         >recent posts</h1>

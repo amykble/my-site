@@ -55,6 +55,7 @@
         >Amy Keable</a>
       </p>
     </section>
+    <!-- <a target="_blank" href="https://icons8.com/icons/set/domain">Website icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
   </footer>
 </template>
 

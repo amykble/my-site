@@ -50,13 +50,13 @@ module.exports = {
   templates: {
     Post: [
       {
-        path: '/blog/:title',
+        path: '/blog/:year/:title',
         component: './src/templates/Post.vue',
       },
     ],
     Project: [
       {
-        path: '/prtfolio/:title',
+        path: '/prtfolio/:year/:title',
         component: './src/templates/Project.vue',
       },
     ],

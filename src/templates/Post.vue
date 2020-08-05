@@ -78,7 +78,9 @@ export default {
 
 <style>
 .remark h1,
-.remark h2 {
+.remark h2,
+.remark h3,
+.remark h4 {
 	@apply bg-orange-200;
 }
 
