@@ -30,7 +30,7 @@
 }
 
 .bg-hover:hover::before,
-.bg-hover:focus::before {
+.bg-hover:focus-within::before {
   top: 10px;
   left: 10px;
 }
