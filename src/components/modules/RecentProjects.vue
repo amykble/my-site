@@ -4,7 +4,7 @@
       <header class="fade-in-ltr opacity-0 mt-16 px-2">
         <h1
           class="inline relative z-10 before-class-header mx-6 font-title font-bold text-3xl sm:text-4xl text-green-400"
-        >recent projects</h1>
+        >featured projects</h1>
       </header>
       <section class="mx-6 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
         <article v-for="edge in $page.portfolio.edges" :key="edge.node.id" class="z-10 relative">
@@ -17,8 +17,8 @@
                 :to="edge.node.path"
                 class="text-blue-600 hover:cursor-pointer focus:cursor-pointer"
               >
-                <div>
-                  <g-image :src="edge.node.img" class="h-32 w-auto mx-auto" />
+                <div class="h-32 flex items-center">
+                  <g-image :src="edge.node.img" class="max-h-full w-auto mx-auto" />
                 </div>
                 <div>
                   <h2 class="mt-4 text-2xl">{{ edge.node.title }}</h2>
@@ -27,6 +27,8 @@
               <div class="mt-4 flex">
                 <a
                   :href="edge.node.github"
+                  target="_blank"
+                  rel="noopener"
                   class="opacity-60 hover:opacity-100 focus:opacity-100 transition duration-200 ease-in-out"
                 >
                   <img
@@ -37,6 +39,8 @@
                 </a>
                 <a
                   :href="edge.node.website"
+                  target="_blank"
+                  rel="noopener"
                   class="opacity-60 hover:opacity-100 focus:opacity-100 transition duration-200 ease-in-out"
                 >
                   <img

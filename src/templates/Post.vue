@@ -92,12 +92,15 @@ export default {
 	@apply px-1;
 }
 
-.remark p a {
+.remark p a,
+.remark li a {
 	@apply bg-blue-200 no-underline px-1 transition duration-200 ease-in-out;
 }
 
 .remark p a:hover,
-.remark p a:focus {
+.remark li a:hover,
+.remark p a:focus,
+.remark li a:focus {
 	@apply bg-blue-400;
 }
 </style>
