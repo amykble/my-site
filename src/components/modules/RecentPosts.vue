@@ -3,7 +3,7 @@
     <div class="max-w-screen-lg mx-auto">
       <header class="fade-in-ltr opacity-0 px-2 mt-16">
         <h1
-          class="inline relative z-10 before-class-header mx-6 font-title font-bold text-3xl sm:text-4xl text-blue-400"
+          class="inline relative z-10 before-class-header mx-6 font-title font-bold text-2xl sm:text-4xl text-blue-400"
         >recent posts</h1>
       </header>
       <section class="mx-6 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
