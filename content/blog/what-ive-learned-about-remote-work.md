@@ -1,6 +1,6 @@
 ---
 tag: productivity
-tagCol: bg-blue-200
+tagCol: bg-green-200
 title: What I've Learned About Remote Work
 date: 2020-01-13
 ---

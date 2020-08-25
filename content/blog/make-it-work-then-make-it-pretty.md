@@ -1,6 +1,6 @@
 ---
 tag: codequality
-tagCol: bg-blue-200
+tagCol: bg-orange-200
 title: Make It Work, Then Make it Pretty
 date: 2020-01-22
 ---

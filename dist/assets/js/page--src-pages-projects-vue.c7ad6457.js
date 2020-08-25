@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{fx0o:function(t,e,n){"use strict";n.r(e);var a={metaInfo:{title:"My Projects | amykble"},name:"Projects"},o=n("KHd+"),s=Object(o.a)(a,(function(){var t=this.$createElement;return(this._self._c||t)("Layout",{staticClass:"bg-gray-200 font-body"})}),[],!1,null,"0dcf50d2",null);e.default=s.exports}}]);
