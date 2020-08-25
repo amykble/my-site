@@ -3,7 +3,7 @@
     <main>
       <Hero />
       <RecentPosts />
-      <RecentProjects />
+      <FeaturedProjects />
     </main>
   </Layout>
 </template>
@@ -41,7 +41,7 @@ query {
 <script>
 import Hero from '../components/modules/Hero'
 import RecentPosts from '../components/modules/RecentPosts'
-import RecentProjects from '../components/modules/RecentProjects'
+import FeaturedProjects from '../components/modules/FeaturedProjects'
 
 export default {
 	metaInfo: {
@@ -51,7 +51,7 @@ export default {
 	components: {
 		Hero,
 		RecentPosts,
-		RecentProjects,
+		FeaturedProjects,
 	},
 }
 </script>

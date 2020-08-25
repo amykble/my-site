@@ -8,9 +8,9 @@
       </header>
       <section class="mx-6 mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-10">
         <article v-for="edge in $page.portfolio.edges" :key="edge.node.id" class="z-10 relative">
-          <div class="group bg-hover">
+          <div class="h-full group bg-hover">
             <div
-              class="p-6 h-full bg-white hover:bg-blue-100 transition-all duration-200 ease-in-out"
+              class="h-full p-6 bg-white hover:bg-blue-100 transition-all duration-200 ease-in-out"
             >
               <g-link
                 g-link
@@ -72,7 +72,7 @@
 
 <script>
 export default {
-	name: 'RecentProjects',
+	name: 'FeaturedProjects',
 }
 </script>
 
